@@ -1,0 +1,14 @@
+name: GitHub Classroom Workflow
+
+on:
+  push:
+    branches:
+    - '*'
+    - '!badges'
+
+jobs:
+  build:
+    name: Autograding
+    runs-on: ubuntu-latest
+    steps:
+      - uses: DCI-EdTech/autograding-action@main
